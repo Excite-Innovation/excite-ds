@@ -1,0 +1,8 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "excite-ds",
+  "homepage": "http://excite.limited/ds",
+  "include": [
+    "components/ui/registry.json"
+  ]
+}
