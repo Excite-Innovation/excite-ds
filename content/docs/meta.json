@@ -3,6 +3,7 @@
   "pages": [
     "index",
     "get-started",
-    "button"
+    "button",
+    "files"
   ]
 }
