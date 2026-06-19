@@ -219,7 +219,7 @@ export function TOCItem({
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className={cn(
-            'absolute -top-1.5 inset-s-0 bottom-0 h-[calc(100%+--spacing(1.5))] -z-1 rtl:-scale-x-100',
+            'absolute -top-1.5 inset-s-0 bottom-0 h-[calc(100%+(--spacing(1.5)))] -z-1 rtl:-scale-x-100',
             l1 !== l2 && 'h-full bottom-1.5',
           )}
           style={{
