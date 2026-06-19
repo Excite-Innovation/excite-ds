@@ -12,6 +12,13 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata = {
+  title: {
+    default: "Excite! DS",
+    template: "%s | Excite! DS",
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
