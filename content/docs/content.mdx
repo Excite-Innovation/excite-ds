@@ -1,0 +1,44 @@
+---
+title: Auto-files
+description: Learn how to use auto-files
+---
+
+import { File, Folder, Files } from 'fumadocs-ui/components/files';
+import { InlineTOC } from 'fumadocs-ui/components/inline-toc';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+<InlineTOC items={toc}>Table of Contents</InlineTOC>
+
+
+<auto-files dir="../../../components" pattern="**/*.{ts,tsx}" />
+<auto-files dir="./my-dir" pattern="**/*.{ts,tsx}" />
+
+<auto-files dir="./my-dir" pattern="**/*.{ts,tsx}" defaultOpenAll />
+
+<auto-files
+  dir="../../../components"
+  pattern="**/*.{ts,tsx}"
+  defaultOpenAll
+/>
+
+<Steps>
+
+<Step>
+### Get Started
+Install dependencies
+</Step>
+
+<Step>
+### Hello World
+</Step>
+
+<div className='fd-steps [&_h3]:fd-step'>
+### Hello World
+</div>
+
+</Steps>
+
+<Tabs items={['Javascript', 'Rust']}>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+</Tabs>
