@@ -23,9 +23,9 @@ export default function Page() {
                 <Keyboard /> <kbd>D</kbd>  Switch theme
               </div>
             </Button>
-            <DocsPage>
+            {/* <DocsPage>
               <InlineTOC items={page.data.toc}>Table of Contents</InlineTOC>
-            </DocsPage>
+            </DocsPage> */}
           </div>
         </div>
       </div>

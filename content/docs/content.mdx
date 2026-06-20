@@ -1,11 +1,13 @@
 ---
-title: Auto-files
+title: Content
 description: Learn how to use auto-files
 ---
 
 import { File, Folder, Files } from 'fumadocs-ui/components/files';
 import { InlineTOC } from 'fumadocs-ui/components/inline-toc';
 import { Step, Steps } from 'fumadocs-ui/components/steps';
+import { Building2 } from 'lucide-react';
+import { TypeTable } from 'fumadocs-ui/components/type-table';
 
 <InlineTOC items={toc}>Table of Contents</InlineTOC>
 
@@ -42,3 +44,66 @@ Install dependencies
   <Tab value="Javascript">Javascript is weird</Tab>
   <Tab value="Rust">Rust is fast</Tab>
 </Tabs>
+
+<Tabs groupId="language" items={['Javascript', 'Rust']}>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+</Tabs>
+
+<Tabs groupId="language" items={['Javascript', 'Rust']} persist>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+</Tabs>
+
+<Tabs items={['Javascript', 'Rust']} defaultIndex={1}>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+</Tabs>
+
+<Tabs items={['Javascript', 'Rust', 'C++']}>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+  <Tab id="tab-cpp" value="C++">
+    `Hello World`
+  </Tab>
+</Tabs>
+
+<Tabs items={['Javascript', 'Rust', 'C++']}>
+  <Tab value="Javascript">Javascript is weird</Tab>
+  <Tab value="Rust">Rust is fast</Tab>
+  <Tab id="tab-cpp" value="C++">
+    `Hello World`
+  </Tab>
+</Tabs>
+
+<Tabs items={['Javascript', 'Rust', 'C++']} updateAnchor>
+  <Tab id="tab-js" value="Javascript">
+    Javascript is weird
+  </Tab>
+  <Tab id="tab-rs" value="Rust">
+    Rust is fast
+  </Tab>
+  <Tab id="tab-cpp" value="C++">
+    `Hello World`
+  </Tab>
+</Tabs>
+
+<Tabs defaultValue="npm">
+  <TabsList>
+    <TabsTrigger value="npm">
+      <Building2 />
+      npm
+    </TabsTrigger>
+  </TabsList>
+  <TabsContent value="npm">Hello World</TabsContent>
+</Tabs>
+
+<TypeTable
+  type={{
+    percentage: {
+      description: 'The percentage of scroll position to display the roll button',
+      type: 'number',
+      default: 0.2,
+    },
+  }}
+/>
