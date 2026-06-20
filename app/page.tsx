@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { FilePlusCorner, GitPullRequestCreate, SunMoon, Keyboard } from 'lucide-react';
+import { DocsPage } from 'fumadocs-ui/layouts/docs/page';
+import { InlineTOC } from 'fumadocs-ui/components/inline-toc';
 
 export default function Page() {
   return (
@@ -21,6 +23,9 @@ export default function Page() {
                 <Keyboard /> <kbd>D</kbd>  Switch theme
               </div>
             </Button>
+            <DocsPage>
+              <InlineTOC items={page.data.toc}>Table of Contents</InlineTOC>
+            </DocsPage>
           </div>
         </div>
       </div>
