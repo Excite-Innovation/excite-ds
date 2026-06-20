@@ -6,6 +6,8 @@ component: true
 ---
 
 import { File, Folder, Files } from 'fumadocs-ui/components/files';
+import { GraphView } from '@/components/graph-view';
+import { buildGraph } from '@/lib/build-graph';
 
 <Files>
   <Folder name="app" defaultOpen>
@@ -19,4 +21,6 @@ import { File, Folder, Files } from 'fumadocs-ui/components/files';
     <File name="dialog.tsx" />
   </Folder>
   <File name="package.json" />
+  <GraphView graph={buildGraph()} />
 </Files>
+
