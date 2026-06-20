@@ -15,11 +15,11 @@ export function baseOptions(): BaseLayoutProps {
         active: 'nested-url',
         label: 'Visit Blog',
       },
-      {
-        type: 'custom',
-        children: <Button variant="default">Login</Button>,
-        secondary: true,
-      },
+      // {
+      //   type: 'custom',
+      //   children: <Button variant="default">Login</Button>,
+      //   secondary: true,
+      // },
       {
         type: 'menu',
         text: 'Guide',
@@ -27,13 +27,14 @@ export function baseOptions(): BaseLayoutProps {
           {
             text: 'Getting Started',
             description: 'Learn to use Fumadocs',
-            url: '/docs',
+            url: '/docs/content',
           },
         ],
       },
     ],
     nav: {
       title: 'Excite! DS',
+      transparentMode: 'top',
     },
   };
 }
