@@ -16,6 +16,7 @@
   "dependencies": {
     "@fuma-translate/react": "^1.0.2",
     "@radix-ui/react-collapsible": "^1.1.14",
+    "@radix-ui/react-navigation-menu": "^1.2.16",
     "@radix-ui/react-popover": "^1.1.17",
     "@radix-ui/react-presence": "^1.1.6",
     "@radix-ui/react-scroll-area": "^1.2.12",
