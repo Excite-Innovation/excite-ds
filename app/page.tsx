@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { FilePlusCorner, GitPullRequestCreate, SunMoon, Keyboard } from 'lucide-react';
-import { DocsPage } from 'fumadocs-ui/layouts/docs/page';
+import { DocsPage, DocsDescription, DocsTitle, DocsBody } from 'fumadocs-ui/layouts/docs/page';
 import { InlineTOC } from 'fumadocs-ui/components/inline-toc';
 
 export default function Page() {
@@ -20,12 +20,24 @@ export default function Page() {
             </Button>
             <Button variant={"outline"} size={"sm"}>
               <div className="font-mono text-xs text-muted-foreground w-full flex justify-start gap-1">
-                <Keyboard /> <kbd>D</kbd>  Switch theme
+              <Keyboard /> <kbd>D</kbd>  Switch theme
               </div>
             </Button>
-            {/* <DocsPage>
-              <InlineTOC items={page.data.toc}>Table of Contents</InlineTOC>
-            </DocsPage> */}
+            <DocsPage>
+              {/* <InlineTOC items={page.data.toc}>
+                Table of Contents
+              </InlineTOC> */}
+              <DocsTitle>
+                title
+              </DocsTitle>
+              <DocsDescription>
+                description
+              </DocsDescription>
+              <DocsBody>
+                <h2>This heading looks good!</h2>
+                It applies the Typography styles, wrap your content here.
+              </DocsBody>
+            </DocsPage>
           </div>
         </div>
       </div>
