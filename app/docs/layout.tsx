@@ -8,9 +8,11 @@ export default function Layout({ children }: LayoutProps<"/docs">) {
     <DocsLayout
       tree={source.getPageTree()}
       {...baseOptions()}
-      sidebar={{ enabled: true }}
+      sidebar={{ 
+        enabled: true,
+        prefetch: false 
+      }}
       containerProps={{ className: "..." }}
-      // tree={source.getPageTree()}
       // links={[]}
       tabs={[
         {
@@ -20,7 +22,6 @@ export default function Layout({ children }: LayoutProps<"/docs">) {
           url: '/docs/components',
           // optionally, you can specify a set of urls which activates the item
           // urls: new Set(['/docs/test', '/docs/components']),
-          
         },
       ]}
     >

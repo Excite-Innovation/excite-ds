@@ -1,5 +1,5 @@
 import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
-import { Book } from 'lucide-react';
+import { Book, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export function baseOptions(): BaseLayoutProps {
@@ -8,6 +8,15 @@ export function baseOptions(): BaseLayoutProps {
     links: [
       {
         icon: <Book />,
+        text: 'Get Started',
+        url: '/get-started',
+        // secondary items will be displayed differently on navbar
+        secondary: true,
+        active: 'nested-url',
+        label: 'Visit Blog',
+      },
+      {
+        icon: <FileText />,
         text: 'Blog',
         url: '/blog',
         // secondary items will be displayed differently on navbar
