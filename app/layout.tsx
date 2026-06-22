@@ -4,6 +4,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
 import { Banner } from "fumadocs-ui/components/banner";
+import 'katex/dist/katex.css';
 
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'})
