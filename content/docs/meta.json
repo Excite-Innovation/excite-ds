@@ -1,6 +1,7 @@
 {
   "title": "Docs",
   "root": true,
+  "collapsible": true,
   "pages": [
     "index",
     "get-started",
@@ -9,5 +10,6 @@
     "content",
     "upload",
     "drop-zone"
-  ]
+  ],
+  "pagesIndex": "upload"
 }

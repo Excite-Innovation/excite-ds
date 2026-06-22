@@ -3,7 +3,7 @@ import type { MDXComponents } from 'mdx/types';
 import { CodeBlock, Pre } from 'fumadocs-ui/components/codeblock';
 import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
 import * as TabsComponents from 'fumadocs-ui/components/tabs';
-
+import * as Twoslash from 'fumadocs-twoslash/ui';
 
 export function getMDXComponents(components?: MDXComponents) {
   return {
@@ -15,6 +15,7 @@ export function getMDXComponents(components?: MDXComponents) {
     ),
     img: (props) => <ImageZoom {...(props as any)} />,
     ...TabsComponents,
+    ...Twoslash,
     ...components,
   } satisfies MDXComponents;
 }
