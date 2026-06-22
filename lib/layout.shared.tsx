@@ -9,7 +9,7 @@ export function baseOptions(): BaseLayoutProps {
       {
         icon: <Book />,
         text: 'Get Started',
-        url: '/get-started',
+        url: '/docs/',
         // secondary items will be displayed differently on navbar
         secondary: true,
         active: 'nested-url',
