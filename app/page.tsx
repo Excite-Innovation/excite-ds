@@ -23,10 +23,10 @@ export default function Page() {
               <Keyboard /> <kbd>D</kbd>  Switch theme
               </div>
             </Button>
-            <DocsPage>
-              {/* <InlineTOC items={page.data.toc}>
+            {/* <DocsPage>
+              <InlineTOC items={page.data.toc}>
                 Table of Contents
-              </InlineTOC> */}
+              </InlineTOC>
               <DocsTitle>
                 title
               </DocsTitle>
@@ -37,7 +37,7 @@ export default function Page() {
                 <h2>This heading looks good!</h2>
                 It applies the Typography styles, wrap your content here.
               </DocsBody>
-            </DocsPage>
+            </DocsPage> */}
           </div>
         </div>
       </div>
