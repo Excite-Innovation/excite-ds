@@ -1,13 +1,14 @@
 import { source } from "@/lib/source"
 import { DocsLayout } from "fumadocs-ui/layouts/docs"
 import { baseOptions } from "@/lib/layout.shared"
-import type { ReactNode } from 'react';
+import { Banner } from "fumadocs-ui/components/banner";
 
 export default function Layout({ children }: LayoutProps<"/docs">) {
   return (
     <DocsLayout
       tree={source.getPageTree()}
       {...baseOptions()}
+      
       sidebar={{ 
         enabled: true,
         prefetch: false 
@@ -25,7 +26,9 @@ export default function Layout({ children }: LayoutProps<"/docs">) {
         },
       ]}
     >
+      <Banner variant="rainbow" changeLayout={false} className=""> Work in Progress! </Banner>
       {children}
     </DocsLayout>
+    
   )
 }
