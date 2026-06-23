@@ -33,7 +33,7 @@ export default function RootLayout({
       className={cn("antialiased", fontMono.variable, "font-sans", inter.variable)}
     >
       <body className="flex flex-col min-h-screen">
-        <Banner variant="rainbow" changeLayout={true}> Version 2.0 Available! </Banner>
+        <Banner variant="rainbow" changeLayout={true}> Work in Progress! </Banner>
         <RootProvider>
           <ThemeProvider>{children}</ThemeProvider>
         </RootProvider>
