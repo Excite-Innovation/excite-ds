@@ -336,7 +336,7 @@ export function Sidebar({ banner, footer, components, collapsible = true, ...res
                     <SidebarCollapseTrigger
                       className={cn(
                         buttonVariants({
-                          color: 'ghost',
+                          secondary: 'ghost',
                           size: 'icon-sm',
                           className: 'mt-px mb-auto text-fd-muted-foreground',
                         }),
@@ -369,7 +369,7 @@ export function Sidebar({ banner, footer, components, collapsible = true, ...res
               className={cn(
                 buttonVariants({
                   size: 'icon-sm',
-                  color: 'ghost',
+                  secondary: 'ghost',
                   className: 'lg:hidden',
                 }),
               )}
@@ -388,7 +388,7 @@ export function Sidebar({ banner, footer, components, collapsible = true, ...res
                 className={cn(
                   buttonVariants({
                     size: 'icon-sm',
-                    color: 'ghost',
+                    secondary: 'ghost',
                     className: 'ms-auto text-fd-muted-foreground',
                   }),
                 )}
@@ -415,7 +415,7 @@ export function Sidebar({ banner, footer, components, collapsible = true, ...res
                   className={cn(
                     buttonVariants({
                       size: 'icon-sm',
-                      color: 'ghost',
+                      secondary: 'ghost',
                     }),
                     'text-fd-muted-foreground lg:hidden',
                     i === iconLinks.length - 1 && 'me-auto',

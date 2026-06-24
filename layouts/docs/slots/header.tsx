@@ -33,7 +33,7 @@ export function Header(props: ComponentProps<'header'>) {
         <slots.sidebar.trigger
           className={cn(
             buttonVariants({
-              color: 'ghost',
+              secondary: 'ghost',
               size: 'icon-sm',
               className: 'p-2',
             }),
