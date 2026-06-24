@@ -87,7 +87,7 @@ export function Sidebar({ footer, banner, collapsible = true, components, ...res
               <SidebarCollapseTrigger
                 className={cn(
                   buttonVariants({
-                    color: 'ghost',
+                    variant: 'ghost',
                     size: 'icon-sm',
                     className: 'mb-auto text-fd-muted-foreground',
                   }),
@@ -119,7 +119,7 @@ export function Sidebar({ footer, banner, collapsible = true, components, ...res
                 <LinkItem
                   key={i}
                   item={item}
-                  className={cn(buttonVariants({ size: 'icon-sm', color: 'ghost' }))}
+                  className={cn(buttonVariants({ size: 'icon-sm', variant: 'ghost' }))}
                   aria-label={item.label}
                 >
                   {item.icon}
@@ -144,7 +144,7 @@ export function Sidebar({ footer, banner, collapsible = true, components, ...res
                   className={cn(
                     buttonVariants({
                       size: 'icon-sm',
-                      color: 'ghost',
+                      variant: 'ghost',
                       className: 'p-2',
                     }),
                   )}
@@ -164,7 +164,7 @@ export function Sidebar({ footer, banner, collapsible = true, components, ...res
             <SidebarTrigger
               className={cn(
                 buttonVariants({
-                  color: 'ghost',
+                  variant: 'ghost',
                   size: 'icon-sm',
                   className: 'p-2',
                 }),
@@ -241,7 +241,7 @@ function SidebarContent({ ref: refProp, className, children, ...props }: Compone
             <Base.SidebarCollapseTrigger
               className={cn(
                 buttonVariants({
-                  color: 'ghost',
+                  variant: 'ghost',
                   size: 'icon-sm',
                   className: 'rounded-lg',
                 }),
