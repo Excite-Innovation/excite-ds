@@ -26,7 +26,7 @@ export default function Layout({ children }: LayoutProps<"/docs">) {
         },
       ]}
     >
-      <Banner variant="rainbow" changeLayout={false} className=""> Work in Progress! </Banner>
+      {/* <Banner variant="rainbow" changeLayout={false} className=""> Work in Progress! </Banner> */}
       {children}
     </DocsLayout>
     
