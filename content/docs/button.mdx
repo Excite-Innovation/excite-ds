@@ -5,16 +5,46 @@ featured: true
 component: true
 ---
 
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Button } from "@/components/ui/button";
+import { Tabs, Tab } from "fumadocs-ui/components/tabs";
 
-# Button
-A button component used to trigger actions.
+## Preview
 
-<Accordions type="single">
-  <Accordion title="Variants">
-    Variant description comes here
-  </Accordion>
-  <Accordion title="Variants 2">
-    Variant description comes here
-  </Accordion>
-</Accordions>
+<Button>Click Me</Button>
+
+## Usage
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab value="Preview">
+    <Button>Click Me</Button>
+  </Tab>
+
+  <Tab value="Code">
+
+```tsx
+import { Button } from "@/components/ui/button";
+
+<Button>Click Me</Button>
+
+```
+
+  </Tab>
+</Tabs>
+
+## Variants
+
+<div className="flex flex-wrap gap-2">
+  <Button variant="default">Default</Button>
+  <Button variant="secondary">Secondary</Button>
+  <Button variant="outline">Outline</Button>
+  <Button variant="ghost">Ghost</Button>
+  <Button variant="destructive">Destructive</Button>
+</div>
+
+## Sizes
+
+<div className="flex flex-wrap items-center gap-2">
+  <Button size="sm">Small</Button>
+  <Button size="default">Default</Button>
+  <Button size="lg">Large</Button>
+</div>
