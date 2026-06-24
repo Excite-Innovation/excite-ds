@@ -1,50 +1,208 @@
 ---
 title: Button
 description: Displays a button or a component that looks like a button.
-featured: true
-component: true
 ---
 
 import { Button } from "@/components/ui/button";
-import { Tabs, Tab } from "fumadocs-ui/components/tabs";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 ## Preview
+<div className="overflow-x-auto">
+  <table className="w-full border-0">
+    <thead className="[&_th]:border-0">
+      <tr>
+        <th className="p-4 text-left">Variant</th>
+        <th className="p-4 text-center">XS</th>
+        <th className="p-4 text-center">SM</th>
+        <th className="p-4 text-center">Default</th>
+        <th className="p-4 text-center">LG</th>
+      </tr>
+    </thead>
 
-<Button>Click Me</Button>
+    <tbody className="[&_td]:border-0 [&_tr]:border-0">
+      <tr>
+        <td className="p-4 font-medium">Default</td>
+        <td className="p-4 text-center"><Button size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button>Button</Button></td>
+        <td className="p-4 text-center"><Button size="lg">Button</Button></td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Outline</td>
+        <td className="p-4 text-center"><Button variant="outline" size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="outline" size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="outline">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="outline" size="lg">Button</Button></td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Secondary</td>
+        <td className="p-4 text-center"><Button variant="secondary" size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="secondary" size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="secondary">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="secondary" size="lg">Button</Button></td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Ghost</td>
+        <td className="p-4 text-center"><Button variant="ghost" size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="ghost" size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="ghost">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="ghost" size="lg">Button</Button></td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Destructive</td>
+        <td className="p-4 text-center"><Button variant="destructive" size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="destructive" size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="destructive">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="destructive" size="lg">Button</Button></td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Link</td>
+        <td className="p-4 text-center"><Button variant="link" size="xs">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="link" size="sm">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="link">Button</Button></td>
+        <td className="p-4 text-center"><Button variant="link" size="lg">Button</Button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Preview with Icons
+
+<div className="overflow-x-auto">
+  <table className="w-full border-0">
+    <thead className="[&_th]:border-0">
+      <tr>
+        <th className="p-4 text-left">Variant</th>
+        <th className="p-4 text-center">Leading Icon</th>
+        <th className="p-4 text-center">Trailing Icon</th>
+      </tr>
+    </thead>
+
+    <tbody className="[&_td]:border-0 [&_tr]:border-0">
+      <tr>
+        <td className="p-4 font-medium">Default</td>
+        <td className="p-4 text-center">
+          <Button>
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button>
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Outline</td>
+        <td className="p-4 text-center">
+          <Button variant="outline">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="outline">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Secondary</td>
+        <td className="p-4 text-center">
+          <Button variant="secondary">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="secondary">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Ghost</td>
+        <td className="p-4 text-center">
+          <Button variant="ghost">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="ghost">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Destructive</td>
+        <td className="p-4 text-center">
+          <Button variant="destructive">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="destructive">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Link</td>
+        <td className="p-4 text-center">
+          <Button variant="link">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="link">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Installation
+
+```bash
+npx shadcn@latest add button
+```
 
 ## Usage
-
-<Tabs items={["Preview", "Code"]}>
-  <Tab value="Preview">
-    <Button>Click Me</Button>
-  </Tab>
-
-  <Tab value="Code">
 
 ```tsx
 import { Button } from "@/components/ui/button";
 
-<Button>Click Me</Button>
-
+export function Example() {
+  return <Button>Click Me</Button>;
+}
 ```
 
-  </Tab>
-</Tabs>
+## API
 
-## Variants
-
-<div className="flex flex-wrap gap-2">
-  <Button variant="default">Default</Button>
-  <Button variant="secondary">Secondary</Button>
-  <Button variant="outline">Outline</Button>
-  <Button variant="ghost">Ghost</Button>
-  <Button variant="destructive">Destructive</Button>
-</div>
-
-## Sizes
-
-<div className="flex flex-wrap items-center gap-2">
-  <Button size="sm">Small</Button>
-  <Button size="default">Default</Button>
-  <Button size="lg">Large</Button>
-</div>
+| Prop | Type | Default |
+| --- | --- | --- |
+| variant | `"default" \| "outline" \| "secondary" \| "ghost" \| "destructive" \| "link"` | `"default"` |
+| size | `"xs" \| "sm" \| "default" \| "lg" \| "icon" \| "icon-xs" \| "icon-sm" \| "icon-lg"` | `"default"` |
+| asChild | `boolean` | `false` |
