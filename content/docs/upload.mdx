@@ -1,18 +1,38 @@
 ---
 title: Upload
-description: Learn how to use upload
+description: Learn how to use the Upload component.
 ---
 
-import { Accordion, Accordions } from 'fumadocs-ui/components/accordion';
+import { Accordion, Accordions } from "fumadocs-ui/components/accordion";
 
 # Upload
-Simple and easy file uploads for React. Upload directly to any S3-compatible service with minimal setup.
 
-<Accordions type="single" class>
-  <Accordion title="Variants">
-    Variant description comes here
+The Upload component provides a simple and flexible way to upload files in React applications. It supports direct uploads to S3-compatible storage providers and can be customized to fit different workflows and user experiences.
+
+## Features
+
+- Simple file uploads
+- Drag-and-drop support
+- Direct uploads to S3-compatible storage
+- Customizable UI and behavior
+- TypeScript support
+
+## Frequently Asked Questions
+
+<Accordions type="single">
+  <Accordion title="What file types are supported?">
+    The Upload component supports any file type. You can restrict accepted file types using the <code>accept</code> prop.
   </Accordion>
-  <Accordion title="Variants 2">
-    Variant description comes here
+
+  <Accordion title="Can I upload files directly to S3?">
+    Yes. The component is designed to work with Amazon S3 and other S3-compatible storage providers, enabling secure direct uploads.
+  </Accordion>
+
+  <Accordion title="Does it support drag and drop?">
+    Yes. Users can either drag and drop files into the upload area or select files manually using the file picker.
+  </Accordion>
+
+  <Accordion title="Can I customize the upload UI?">
+    Yes. The component is fully customizable and can be styled to match your application's design system.
   </Accordion>
 </Accordions>

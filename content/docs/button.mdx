@@ -4,9 +4,9 @@ description: Displays a button or a component that looks like a button.
 ---
 
 import { Button } from "@/components/ui/button";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 ## Preview
-
 <div className="overflow-x-auto">
   <table className="w-full border-0">
     <thead className="[&_th]:border-0">
@@ -66,6 +66,118 @@ import { Button } from "@/components/ui/button";
         <td className="p-4 text-center"><Button variant="link" size="sm">Button</Button></td>
         <td className="p-4 text-center"><Button variant="link">Button</Button></td>
         <td className="p-4 text-center"><Button variant="link" size="lg">Button</Button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Preview with Icons
+
+<div className="overflow-x-auto">
+  <table className="w-full border-0">
+    <thead className="[&_th]:border-0">
+      <tr>
+        <th className="p-4 text-left">Variant</th>
+        <th className="p-4 text-center">Leading Icon</th>
+        <th className="p-4 text-center">Trailing Icon</th>
+      </tr>
+    </thead>
+
+    <tbody className="[&_td]:border-0 [&_tr]:border-0">
+      <tr>
+        <td className="p-4 font-medium">Default</td>
+        <td className="p-4 text-center">
+          <Button>
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button>
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Outline</td>
+        <td className="p-4 text-center">
+          <Button variant="outline">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="outline">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Secondary</td>
+        <td className="p-4 text-center">
+          <Button variant="secondary">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="secondary">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Ghost</td>
+        <td className="p-4 text-center">
+          <Button variant="ghost">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="ghost">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Destructive</td>
+        <td className="p-4 text-center">
+          <Button variant="destructive">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="destructive">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
+      </tr>
+
+      <tr>
+        <td className="p-4 font-medium">Link</td>
+        <td className="p-4 text-center">
+          <Button variant="link">
+            <ArrowLeft />
+            Button
+          </Button>
+        </td>
+        <td className="p-4 text-center">
+          <Button variant="link">
+            Button
+            <ArrowRight />
+          </Button>
+        </td>
       </tr>
     </tbody>
   </table>
