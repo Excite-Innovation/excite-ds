@@ -30,7 +30,7 @@ export const navItemVariants = cva('[&_svg]:size-4', {
         className: 'gap-1.5',
       }),
       icon: buttonVariants({
-        secondary: 'ghost',
+        variant: 'ghost',
         size: 'icon',
       }),
     },
@@ -95,7 +95,7 @@ export function Header(props: ComponentProps<'header'>) {
               className={cn(
                 buttonVariants({
                   size: 'icon',
-                  secondary: 'ghost',
+                  variant: 'ghost',
                   className: 'group [&_svg]:size-5.5',
                 }),
               )}
@@ -291,7 +291,7 @@ function MobileNavigationMenuLinkItem({
             main: 'inline-flex items-center gap-2 py-1.5 transition-colors hover:text-fd-popover-foreground/50 data-[active=true]:font-medium data-[active=true]:text-fd-primary [&_svg]:size-4',
             icon: buttonVariants({
               size: 'icon',
-              secondary: 'ghost',
+              variant: 'ghost',
             }),
             button: buttonVariants({
               color: 'secondary',
