@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { FilePlusCorner, GitPullRequestCreate, SunMoon, Keyboard } from 'lucide-react';
+import { ArrowRight, Keyboard, ExternalLink } from 'lucide-react';
+import Link from "next/link";
 import { DocsPage, DocsDescription, DocsTitle, DocsBody } from 'fumadocs-ui/layouts/docs/page';
 import { InlineTOC } from 'fumadocs-ui/components/inline-toc';
 
@@ -8,21 +9,28 @@ export default function Page() {
     <div className="flex min-h-svh p-6">
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         <div>
-          {/* <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p> */}
+          <h1 className="font-bold">Excite! Design System</h1>
+          <p>Excite! Design System is a reusable UI component library for building consistent, scalable products across the Excite ecosystem.</p>
+          <p>Built on top of Shadcn, it extends and customizes components through the shadcn directory while maintaining compatibility with the foundation.</p>
           <div className="w-full flex justify-start gap-1">
-            <Button variant={"default"} size={"icon-sm"}>
-              <FilePlusCorner />
-            </Button>
-            <Button variant={"default"} size={"sm"}>
-              Add to version control <GitPullRequestCreate />
-            </Button>
-            <Button variant={"outline"} size={"sm"}>
-              <div className="font-mono text-xs text-muted-foreground w-full flex justify-start gap-1">
-              <Keyboard /> <kbd>D</kbd>  Switch theme
-              </div>
-            </Button>
+            <Link href={"/docs"}>
+              <Button variant={"default"} size={"sm"}>
+                Get Started <ArrowRight />
+              </Button>
+            </Link>
+            <Link 
+              href="https://github.com/Excite-Innovation/excite-ds"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant={"outline"} size={"sm"}>
+                <div className="font-mono text-xs text-muted-foreground w-full flex justify-start gap-1">
+                {/* <Keyboard /> <kbd>D</kbd>  Switch theme */}
+                Visit GitHub
+                <ExternalLink />
+                </div>
+              </Button>
+            </Link>
             {/* <DocsPage>
               <InlineTOC items={page.data.toc}>
                 Table of Contents
