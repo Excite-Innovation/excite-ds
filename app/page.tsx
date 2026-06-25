@@ -10,8 +10,8 @@ export default function Page() {
       <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
         <div>
           <h1 className="font-bold">Excite! Design System</h1>
-          <p>Excite! Design System is a reusable set of UI components, styles, and guidelines for building consistent and scalable products. It standardizes design and development to speed up workflows and ensure a unified user experience across all Excite products.</p>
-          <p>Built on top of Shadcn as its foundation, the design system extends and customizes components through the shadcn directory, enabling consistent enhancements while staying aligned with the underlying architecture.</p>
+          <p>Excite! Design System is a reusable UI component library for building consistent, scalable products across the Excite ecosystem.</p>
+          <p>Built on top of Shadcn, it extends and customizes components through the shadcn directory while maintaining compatibility with the foundation.</p>
           <div className="w-full flex justify-start gap-1">
             <Link href={"/docs"}>
               <Button variant={"default"} size={"sm"}>
